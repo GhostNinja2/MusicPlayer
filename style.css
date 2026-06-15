@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Creepster&family=Diplomata&family=Finger+Paint&family=Gorditas:wght@400;700&family=Joti+One&family=Nabla&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Ponomar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Guerrilla&family=Protest+Riot&family=Protest+Strike&family=Russo+One&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background: radial-gradient(circle,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.5) 100%), url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Protest Riot';
+    overflow-y: hidden;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    color: #f0f0f0;
+}
+
+button{
+    font-size: 1.3rem;
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid black;
+    transition: 0.5s ease;
+}
+
+button:hover{
+   font-size: 1.9rem;
+   box-shadow: 0px 0px 8px 4px red;
+}
+
+/*input{
+    -webkit-appearance: none;
+    background-color:  #f0f0f0;
+    border-radius: 10px;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 8px;
+}*/
+
+li{
+    cursor: pointer;
+    color: aliceblue;
+    /*text-decoration: none;*/
+    font-family: 'Russo One';
+    background-color: #f0f0f018;
+    padding: 0.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    /*height: 1.5rem;*/
+   /* min-height: 2rem;*/
+    transition: 0.5s ease;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+    box-shadow: 0px 0px 5px 2px #f0f0f0;
+    font-size: 1.2rem;
+    /*height: 1.8rem;*/
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+.nameProgram{
+    background-color: rgb(233, 0, 0);
+    box-shadow: 0px 0px 10px 5px rgb(180, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 0.3rem;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;  
+    font-family: 'Protest Guerrilla';
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.142);
+}
+
+.SongName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.MainButton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.function{
+    display: grid;
+    gap: 0.5rem;
+}
+
+.Info{
+    background-color: rgba(0, 0, 0, 0.352);
+    border-radius: 10px;
+    padding: 3px;
+    color: rgb(216, 216, 216);
+
+}
+
+.OtherButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.OtherButton>button{
+    font-size: 1rem;
+    width: 3.5rem;
+}
+
+.AllButton{
+    display: grid;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.352);
+    padding: 3px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.OtherFunction{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 0.5rem;
+    margin-top: -10rem;
+}
+
+.PlayList{
+    display: grid;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.302);
+    width: 18rem;
+    height: 10rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.UploadBtn{
+    cursor: pointer;
+    color: #000000;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    width: 18rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: 0.5s ease;
+}
+
+.UploadBtn:hover{
+    box-shadow: 0px 0px 10px 5px rgb(255, 68, 0);
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle{
+    background-color: rgb(225, 0, 0);
+    border: 3px solid rgb(225, 0, 0);
+    border-radius: inherit;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    transform: translateY(-25%);
+    right: -5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.time>p{
+    color: #000000;
+    background-color: #f0f0f01d;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.RepeatBtnImg{
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: 0.5s ease;
+}
+
+.DifferentBtnImg{
+    width: 1.9rem;
+    height: 1.9rem;
+    transition: 0.5s ease;
+}
+
+#line:hover .circle{
+    opacity: 1;
+}
+
+#List{
+    display: grid;
+    gap: 0.5rem;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+#List::-webkit-scrollbar {
+  width: 8px;
+}
+
+#List::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px; 
+}
+
+/*#List::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-appearance: none;
+  border-radius: 10px;
+}
+
+#List::-webkit-scrollbar-thumb {
+  background: #ffffff40;
+  border-radius: 10px;
+   -webkit-appearance: none;
+}*/
+
+#ProgressBar{
+    width: 20rem;
+    height: 7px;
+    background-color: #f0f0f0;  
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#line{
+    width: 0%;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(225, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+
+#SongNameInfo{
+    font-family: 'Russo One';
+    font-size: 0.8rem;
+}
+
+#ArtistNameInfo{
+    font-family: 'Russo One';
+    font-size: 0.8rem;
+}
+
+#MusicImg{
+    width: 15rem;
+    height: 15rem;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#ReturnSongBtn:hover .RepeatBtnImg{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+#ShuffleBtn:hover .DifferentBtnImg{
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+@media(max-width: 1024px){
+
+body{
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Protest Riot';
+    overflow-y: hidden;
+}
+
+h1{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+p{
+    font-size: 0.8rem;
+    color: #f0f0f0;
+}
+
+button{
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid black;
+    transition: 0.5s ease;
+}
+
+button:hover{
+   font-size: 1.9rem;
+   box-shadow: 0px 0px 6px 3px red;
+}
+
+li{
+    cursor: pointer;
+    color: aliceblue;
+    font-family: 'Russo One';
+    background-color: #f0f0f018;
+    padding: 0.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.5s ease;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+    box-shadow: 0px 0px 5px 2px #f0f0f0;
+    font-size: 0.8rem;
+}
+
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.nameProgram{
+    background-color: rgb(233, 0, 0);
+    box-shadow: 0px 0px 10px 5px rgb(180, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 0.3rem;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;  
+    font-family: 'Protest Guerrilla';
+}
+
+.RepeatBtnImg{
+    width: 1rem;
+    height: 1rem;
+    transition: 0.5s ease;
+}
+
+.DifferentBtnImg{
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: 0.5s ease;
+}
+
+
+.UploadBtn{
+    cursor: pointer;
+    color: #000000;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    width: 12rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: 0.5s ease;
+}
+
+.UploadBtn:hover{
+    box-shadow: 0px 0px 6px 3px rgb(255, 68, 0);
+}
+
+#MusicImg{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#ReturnSongBtn:hover .RepeatBtnImg{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+#ShuffleBtn:hover .DifferentBtnImg{
+    width: 2rem;
+    height: 2rem;
+}
+
+#ProgressBar{
+    width: 10rem;
+    height: 7px;
+    background-color: #f0f0f0;  
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#line{
+    width: 0%;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(225, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+
+.PlayList{
+    display: grid;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.302);
+    width: 12rem;
+    height: 4rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.OtherFunction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    margin-top: 0%;
+}
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="scriptKeyboard.js" defer></script>
+</head>
+<body>
+    <div class="container">
+     <div class="name">
+        <h1>Music <span class="nameProgram">Player</span></h1>
+        <h2>Your Sound Universe</h2>
+     </div>
+     <div class="main">
+        <div class="SongName">
+            <img id="MusicImg" src="MusicPhoto.jpg" alt="">
+            <div class="Info">
+             <p>Song Name: <span id="SongNameInfo"></span></p>
+             <p>Artist Name: <span id="ArtistNameInfo"></span></p>
+            </div>
+        </div>
+        <div class="function">
+         <div class="time">
+            <p id="CurrentTime">00:00</p>
+            <p id="DurationTime">00:00</p>
+         </div>
+         <div id="ProgressBar">
+            <div id="line">
+              <span class="circle"></span>
+            </div>
+         </div>
+        <!--<input type="range" id="ProgressBar" min="0" max="100" value="0">--> 
+         <div class="AllButton">
+         <div class="MainButton">
+            <button id="Back">⏮</button>
+            <button id="Pause">▶</button>
+            <button id="Next">⏭</button>    
+         </div>
+         <div class="OtherButton">
+            <button id="ReturnSongBtn">
+               <img src="RepeatBtn.png" alt="" class="RepeatBtnImg">
+            </button>
+            <button id="ShuffleBtn">
+               <img src="DifferentBtn.png" alt="" class="DifferentBtnImg">
+            </button>         
+         </div>
+        </div>
+        </div>
+     </div>
+    </div>
+   <div class="OtherFunction">
+    <div class="PlayList">
+      <label for="InputMusic" class="UploadBtn">
+       Upload Music
+      </label>
+      <input type="file" accept="audio/*" id="InputMusic" hidden>
+      <ol id="List">
+      </ol>
+    </div>
+   </div>
+</body>
+</html>
